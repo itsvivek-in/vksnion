@@ -1,0 +1,379 @@
+body {
+  margin: 0;
+  max-width: 100%;
+  height: 100%;
+  font-family: 'Comfortaa', cursive;
+  overflow-x: hidden;
+}
+
+.vks-nav {
+  width: 100%;
+  height: 70px;
+  top: -2px;
+  position: fixed;
+  z-index: 100;
+  color: white;
+}
+
+.vks-nav-box {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+  height: 70px;
+}
+
+.vks-nav-style {
+  transition: background-color 300ms ease-in-out;
+  background-color: #006666;
+}
+
+.vks-nav-box-block {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+  position: relative;
+  cursor: pointer;
+}
+
+.vks-nav-box-block:hover {
+  
+  transition: background-color 200ms ease-in-out;
+  background-color: #2d4e4e;
+
+}
+
+.vks-div1 {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  position: relative;
+  background-image: url(https://i0.wp.com/providii.com/img/backgrounds/web-development.jpg?resize=640%2C427&ssl=1);
+  background-color: blueviolet;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 150px;
+}
+
+.vks-div1-box1 {
+  font-size: 25px;
+  font-weight: 200;
+  color: white;
+  letter-spacing: 5px;
+  display: block;
+}
+
+.vks-div1-box2 {
+  font-size: 45px;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 10px;
+  display: block;
+}
+
+.vks-div2 {
+  width: 100%;
+  height: auto;
+  padding: 40px 0px;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  background:#006666;
+}
+
+.vks-div2-box {
+  border-top: solid 1px grey;
+  border-bottom: solid 1px grey;
+  padding: 10px;
+}
+
+.vks-div2-circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin:10px 10px;
+  padding-top: 18px;
+  text-align: center;
+  background: transparent;
+  border-radius: 50% 50% 0% 0%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.vks-div2-circle:hover {
+  transition: background-color 300ms ease-in-out;
+  background-color: #00b3b3;
+}
+
+.vks-div2-circle span {
+  font-size: 12px;
+  display: block;
+  color: white;
+}
+.vks-div2-circle1 { 
+  animation-name: circle1animation;
+  animation-duration: 4s;
+}
+
+.vks-div2-circle2 {
+  animation-name: circle2animation;
+  animation-duration: 4s;
+}
+
+@keyframes circle1animation {
+  0% {left: 2000px}
+  100% {left: 0px}
+}
+
+@keyframes circle2animation {
+  0% {right: 2000px}
+  100% {right: 0px}
+}
+
+.vks-div3 {
+  width: 100%;
+  height: auto;
+  background-color: #e0ebeb;
+  padding: 15px 0px;
+}
+
+.vks-div3-box {
+  padding: 10px;
+  margin: 10px 0px;
+  position: relative;
+  background: white;
+  border: solid 1px lightgray;
+  border-radius: 5px;
+}
+
+.vks-div3-box:hover .vks-div3-hover {
+
+  transition: background 0.5s ease;
+  background: rgba(117, 116, 116, 0.8);
+
+}
+
+.vks-div3-hover {
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  
+}
+
+.vks-div3-hover-demo {
+  position: absolute;
+  top: 36%;
+  left: 0;
+  opacity: 0;
+  margin: auto;
+  color: white;
+  letter-spacing: 1px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vks-div3-hover-demo a {
+  width: 100px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.vks-div3-hover-demo span {
+  width: 50px;
+  height: 50px;
+  display: block;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  margin-left: 23px;
+  border: 2px solid white;
+}
+
+
+.vks-div3-box:hover .vks-div3-hover-demo {
+
+  animation-name: demotoclick;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+
+
+}
+
+@keyframes demotoclick {
+  0% {top: -10%; opacity: 0}
+  100% {top: 36%; opacity: 1;}
+}
+
+.vks-image-box {
+  width: 100%;
+  height: 200px;
+}
+
+.vks-div3-title {
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  letter-spacing: 1px;
+}
+
+.vks-div3-desc {
+  font-size: 16px;
+  font-weight: 300;
+  display: block;
+  text-align: justify;
+  line-break: 20px;
+  letter-spacing: 1px;
+}
+
+.vks-div3-details {
+  font-size: 14px;
+  font-weight: 200;
+  display: block;
+  letter-spacing: 1px;
+}
+
+.vks-div4 {
+  width: 100%;
+  height: auto;
+  padding: 15px 0px;
+  background-image: url(https://i0.wp.com/providii.com/img/backgrounds/web-development.jpg?resize=640%2C427&ssl=1);
+  background-color: blueviolet;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.vks-div4-box {
+  padding: 10px;
+  border: solid 1px grey;
+  color: white;
+  cursor: pointer;
+  margin: 5px 0px;
+  opacity: 0;
+  
+}
+
+.vks-div4-box-animation {
+  animation-name: blog1animation;
+  animation-fill-mode: forwards;
+  animation-duration: 600ms;
+}
+
+@keyframes blog1animation {
+  0% {opacity: 0; margin-bottom: -15px}
+  100% {opacity: 1; margin-bottom: 5px}
+}
+
+.vks-div4-box:hover {
+  transition: background-color 300ms ease-in-out;
+  background-color: #1f2e2e;
+}
+
+.vks-div4-title {
+  font-size: 17px;
+  font-weight: 600;
+  display: block;
+  line-break: 20px;
+  letter-spacing: 1px;
+}
+
+.vks-div4-desc {
+  font-size: 12px;
+  font-weight: 300;
+  display: block;
+  line-break: 15px;
+  letter-spacing: 1px;
+}
+
+.vks-div-explore {
+  padding: 7px 15px 3px 15px;
+  margin: 10px auto;
+  font-weight: 800;
+  color: white;
+  width: 135px;
+  letter-spacing: 4px;
+  border: 1px solid grey;
+  background-color: #006666;
+  text-transform: uppercase;
+}
+
+.vks-div-heading {
+
+  padding: 7px 15px 3px 15px;
+  margin: 10px auto;
+  font-weight: 800;
+  color: white;
+  width: 235px;
+  letter-spacing: 4px;
+  border: 1px solid grey;
+  background-color: #2d4e4e;
+  text-transform: uppercase;
+  
+}
+
+.vks-div5 {
+  width: 100%;
+  background-color: #ffe6e6;
+}
+
+.vks-div5-image {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.vks-div5-image img {
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid grey;
+}
+
+.vks-div5-text {
+
+  padding: 20px;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  font-weight: 400;
+
+}
+
+.vks-div6 {
+  width: 100%;
+  height: auto;
+  background-image: url(https://i0.wp.com/providii.com/img/backgrounds/web-development.jpg?resize=640%2C427&ssl=1);
+  background-color: blueviolet;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.vks-footer {
+  width: 100%;
+  padding: 7px 0px;
+  background-color: #e6e6e6;
+  border-top: 2px solid #999999;
+  text-align: center;
+  line-height: 50px;
+}
+
+
+
+/*Effects*/
+.effect1 {
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
+}
